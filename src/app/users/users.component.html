@@ -1,0 +1,33 @@
+<h4>Techwave Onboarding Users</h4>
+<button (click)="adduser()">Add User</button>
+<table>
+    <thead>
+        <tr>
+            <th>User Id</th>
+            <th>Name</th>
+            <th>email</th>
+            <th>mobile number</th>
+            <th>gender</th>
+            <th>Employee Id</th>
+            <th>Designation</th>
+            <th>Department</th>
+            <th>Date of Joining</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of allusers" >
+            <td>{{user.id}}</td>
+            <td>{{user.first_name + ' '+ user.last_name}}</td>
+            <td>{{user.personal_email}}</td>
+            <td>{{user.mobile_number}}</td>
+            <td>{{user.gender }}</td>
+            <td>{{user.employ_id}}</td>
+            <td>{{user.designation}}</td>
+            <td>{{user.departmennt}}</td>
+            <td>{{user.date_of_joining}}</td>
+            <td>{{user.contact_address}}</td>
+
+        </tr>
+    </tbody>
+</table>
